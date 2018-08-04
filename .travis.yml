@@ -3,9 +3,11 @@ services: docker
 
 env:
   matrix:
+    - REPO=base-alpine
     - REPO=base-php
     - REPO=base-python
     - REPO=base-ruby
+    - REPO=alpine
     - REPO=httpd
     - REPO=php
     - REPO=python
