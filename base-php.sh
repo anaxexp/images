@@ -9,7 +9,7 @@ cd /tmp/base-php
 git remote add upstream https://github.com/docker-library/php
 #git fetch upstream
 git pull upstream master --allow-unrelated-histories
-git merge --strategy-option ours --no-edit upstream/master
+git merge --strategy-option ours --no-edit upstream upstream/master
 
 ./anaxexp-meta-update.sh
 
