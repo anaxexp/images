@@ -6,6 +6,7 @@ set -e
 
 git clone "https://${GITHUB_MACHINE_USER}:${GITHUB_MACHINE_USER_API_TOKEN}@github.com/anaxexp/base-python" /tmp/base-python
 cd /tmp/base-python
+git rebase
 git remote add upstream https://github.com/docker-library/python --fetch
 git fetch upstream --force 
 git merge --strategy-option ours --no-edit  upstream/master
