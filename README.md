@@ -25,7 +25,6 @@
 * [anaxexp/apache] based on [anaxexp/httpd] image
 * [anaxexp/mariadb]
 
-
 [anaxexp/httpd]: https://github.com/anaxexp/httpd
 [anaxexp/base-php]: https://github.com/anaxexp/base-php
 [anaxexp/base-ruby]: https://github.com/anaxexp/base-ruby
@@ -47,4 +46,3 @@
 [anaxexp/python]: https://github.com/anaxexp/python
 [anaxexp/apache]: https://github.com/anaxexp/apache
 [anaxexp/mariadb]: https://github.com/anaxexp/mariadb
-
