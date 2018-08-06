@@ -3,7 +3,9 @@
 set -e
 
 . lib.sh
-
+if [[ ! -z /tmp/base-python ]]; then
+    rm -rf /tmp/base-python;
+fi 
 git clone "https://${GITHUB_MACHINE_USER}:${GITHUB_MACHINE_USER_API_TOKEN}@github.com/anaxexp/base-python" /tmp/base-python
 cd /tmp/base-python
 git remote add upstream https://github.com/docker-library/python --fetch

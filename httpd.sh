@@ -3,7 +3,9 @@
 set -e
 
 . lib.sh
-
+if [[ ! -z /tmp/httpd ]]; then
+    rm -rf /tmp/httpd;
+fi 
 git clone "https://${GITHUB_MACHINE_USER}:${GITHUB_MACHINE_USER_API_TOKEN}@github.com/anaxexp/httpd" /tmp/httpd
 cd /tmp/httpd
 git remote add upstream https://github.com/docker-library/httpd --fetch
