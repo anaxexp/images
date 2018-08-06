@@ -10,7 +10,7 @@ git clone "https://${GITHUB_MACHINE_USER}:${GITHUB_MACHINE_USER_API_TOKEN}@githu
 cd /tmp/httpd
 git remote add upstream https://github.com/docker-library/httpd --fetch
 git fetch upstream --force
-git merge --strategy-option ours --no-edit upstream/master --allow-unrelated-histories
+git merge --strategy-option ours --no-edit upstream/master
 
 ./anaxexp-meta-update.sh
 
