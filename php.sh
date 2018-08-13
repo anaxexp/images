@@ -13,7 +13,7 @@ git clone --depth=1 "https://${user}:${token}@github.com/anaxexp/php" /tmp/php
 cd /tmp/php
 
 for version in "${versions[@]}"; do
-    tags=($(get_tags "anaxexp/base-php" | grep -oP "^(${version/./\.}\.[0-9]+)$" | sort -rV))
+    tags=($(get_tags "anaxexp/base-php" | grep -oP "^(${version/\./\.}\.[0-9]+)$" | sort -rV))
     latest_ver="${tags[0]}"
 
     cur_ver=$(grep -oP "(?<=PHP${version//.}=)(.+)" .travis.yml)
